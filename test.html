@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./animate.min.css" rel="stylesheet">
+    <style>
+        /* .box{
+            width: 100px;
+            height: 100px;
+            background-color: #008c8c;
+            transition: all 1s;
+        }
+        .box:hover{
+            transform: scale(1.2);
+            
+        } */
+
+        .test {
+            background: yellow;
+        }
+
+        .box:before {
+            content: "";
+            position: absolute;
+            top: 5%;
+            margin-top: -1px;
+            left: 10%;
+            margin-left: 0.133333rem;
+            width: 1.786667rem;
+            height: 20px;
+            background-color: #ff6600;
+            border-radius: 0.053333rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="test">XXX</div>
+    <div class="box"></div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(".box").append("<style>.box::before{}</style>");
+        });
+        // $('.box').mouseenter(function () {
+        //     // $('.box').css('background-color','black')
+        //     // $('.box').addClass('animate__heartBeat animate__animated')
+        // });
+
+    </script> 
+</body>
+
+</html>

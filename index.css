@@ -1,0 +1,692 @@
+html {
+  
+    font-size: 20px;
+}
+
+header {
+    height: 6rem;
+    background: #006bb7;
+    width: 100%;
+}
+
+header .wrap {
+    margin: 0 auto;
+    width: 60rem;
+    background: url(./img/header-bg_bb39ce.png) no-repeat;
+}
+
+header .top {
+    height: 4rem;
+    transition: all 1s;
+}
+
+header a.top {
+    
+    padding-top: .45rem;
+    height: 3.55rem;
+    width: 12.5rem;
+    float: left;
+}
+
+header .logo-blue {
+    height: 1.25rem;
+    float: left;
+    color: #00aeff;
+    margin: 1.7rem 0 0 0.75rem;
+}
+
+header .logo-blue img {
+    height: 1.25rem;
+}
+
+header .icons {
+    margin-right: -1rem;
+    padding-top: .5rem;
+    display: flex;
+    float: right;
+    width: 16.75rem;
+    height: 1.5rem;
+}
+
+header span.icon-xialasanjiao {
+    color: white;
+    display: inline-block;
+    margin-left: .4rem;
+}
+
+header .icon-shangsanjiao {
+    color: white;
+    display: inline-block;
+    margin-left: .4rem;
+}
+
+header .icons li a {
+    height: .95rem;
+    margin-left: .5rem;
+}
+
+header .store {
+    display: none;
+    box-shadow: 0 0 .15rem #002f50;
+    height: 6rem;
+    position: absolute;
+    background: #002f50;
+    width: 4.5rem;
+    top: 1.4rem;
+    left: -2.35rem;
+}
+
+header .store li {
+    height: 2rem;
+}
+
+header .store li:hover {
+    background: #2464b5;
+}
+
+header .store li a {
+    padding: 0 .5rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: left;
+    float: none;
+    display: block;
+}
+
+header .btm {
+    height: 2rem;
+    margin-left: 0.7rem;
+}
+
+header .btm li {
+    position: relative;
+    margin-right: .9rem;
+    height: 2rem;
+    float: left;
+}
+
+header .btm li a {
+    padding: 0.25rem 0.75rem 0 0.5rem;
+    height: 1.75rem;
+    color: #fff;
+    font-size: .8rem;
+    float: left;
+}
+
+header .btm li a:hover {
+    color: #00aeff;
+    text-decoration: none;
+}
+
+header .dow {
+    position: relative;
+    padding-right: .5rem;
+}
+
+header .icon-down-trangle {
+    margin-left: -0.6rem;
+    position: absolute;
+    bottom: .35rem;
+    color: #4897d9;
+}
+
+header .right {
+    float: right;
+}
+
+header .search, header .sign {
+    margin-right: .5rem;
+    margin-bottom: -0.35rem;
+    display: inline-block;
+}
+
+header .search .icon-sou_suo {
+    color: white;
+}
+
+header .icon-denglu {
+    color: white;
+}
+
+header .search {
+    position: relative;
+    font-size: .7rem;
+}
+
+header .search a, header .sign a {
+    font-size: 1rem;
+}
+
+header .btm-inner {
+    margin-top: -1rem;
+}
+
+header .player {
+    position: absolute;
+    right: 0;
+    display: none;
+}
+
+header .player .toup {
+    width: 1rem;
+    position: absolute;
+    right: 13%;
+    top: 34%;
+    color: #002f50;
+    display: block;
+    font-size: .3rem;
+}
+
+header .player li {
+    background-color: #002f50;
+    padding: 0 .5rem;
+    height: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    font-size: .7rem;
+    display: block;
+    width: 6.4rem;
+    top: 1.75rem;
+    right: -5.1rem;
+}
+
+header .player li:hover {
+    background-color: #2464b5;
+}
+
+header #sear {
+    box-shadow: 0 0 .2rem orangered;
+    height: 1rem;
+    width: 5.4rem;
+    border-radius: 1rem;
+    text-indent: 1.2rem;
+    display: none;
+}
+
+header .blueicon {
+    position: absolute;
+    color: #00aeff;
+    left: .15rem;
+    top: .05rem;
+}
+
+.fixed {
+    display: none;
+    z-index: 3000;
+    left: 1rem;
+    padding-left: 1.1rem;
+    margin-left: -1rem;
+    width: 100%;
+    position: fixed;
+    top: -0.6rem;
+    background-color: #2464b5;
+    right: 0;
+    padding-bottom: 0.2rem;
+}
+
+.fixed .sign {
+    position: absolute;
+    right: -7.5rem;
+}
+
+.fixed .icon-denglu {
+    font-size: 1.3rem;
+    padding-top: 0;
+}
+
+.fixed .image-icon {
+    float: left;
+    height: 2rem;
+    margin-top: -0.25rem;
+    padding-left: .5rem;
+}
+
+/* 固定二维码 */
+
+.fix-right {
+    position: fixed;
+    top: 12.1rem;
+    width: 8rem;
+    height: 8.5rem;
+    background: #fff;
+    border: .05rem solid #dedede;
+    z-index: 99;
+    right: 0;
+}
+
+.fix-right .close {
+    display: block;
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    margin-left: 6.75rem;
+}
+
+.fix-right .code {
+    display: block;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-left: 1.75rem;
+}
+
+.fix-right .word {
+    display: block;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 0.7rem;
+    color: #111;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.fix-right .new {
+    display: block;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    font-size: 0.7rem;
+    color: #111;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+
+
+/* container-wrap */
+
+.backco {
+    background-color: #eee;
+    width: 100%;
+    height:38rem;
+    margin: 0 auto;
+}
+
+.container-wrap {
+    text-align: center;
+    width: 61rem;
+    margin: 0 auto;
+    position: relative;
+    right: -.2rem;
+    color: white;
+}
+
+.container-wrap .banner {
+    background: url(./img/LAL.jpg) no-repeat;
+    width: 63.3rem;
+    margin: 0 auto;
+    height: 10rem;
+    box-sizing: border-box;
+    margin-left: -1.3rem;
+}
+
+.container-wrap .left, .container-wrap .right {
+    display: flex;
+}
+
+.container-wrap .meng {
+    text-align: right;
+    font-size: .9rem;
+    font-weight: bolder;
+}
+
+.container-wrap .west {
+    font-size: .7rem;
+}
+
+.container .pic {
+    height: 5rem;
+}
+
+.container .left .score .top {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.container .right .score .top {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.container-wrap .left, .container-wrap .container .right {
+    height: 6rem;
+    margin: 2.5rem 0 1.5rem;
+    text-align: right;
+}
+
+.container-wrap .container .left {
+    padding-left: 4.7rem;
+}
+
+.container .middle {
+    font-size: .7rem;
+    color: white;
+    padding-left: 4.05rem;
+}
+
+.container .middle th {
+    padding-left: 3.8rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.container-wrap .middle tbody .c {
+    font-weight: 700;
+    min-width: 1.55rem;
+    min-width: 1.15rem;
+    padding: 0.035rem 0 0.025rem;
+}
+
+.container-wrap .middle tbody .t {
+    padding-right: 1.5rem;
+}
+
+.container-wrap .fir {
+    border-bottom: .05rem solid white;
+    min-height: 1.45rem;
+}
+
+.container-wrap .fir-td {
+    min-width: 1.55rem;
+}
+.backco .chose-b{
+    width: 58.5rem;
+    height: 0.5rem;
+    background-color: white;
+    margin: 0.25rem auto 0.5rem;
+}
+@media (max-width:768px) {
+    .line{
+        width: 128%;
+    }
+    .container-wrap {
+        width: 100%;
+    }
+    .container-wrap .banner {
+        background: white;
+        color: #7f7f7f;
+    }
+    .container-wrap .stop, .container-wrap .word {
+        display: none;
+    }
+    .container-wrap .container .left {
+        padding-left: 1.7rem;
+    }
+    .container-wrap .left::after {
+        content: "灰熊\A 34-39";
+        white-space: pre;
+        position: absolute;
+        top: 4.7rem;
+        font-size: .7rem;
+        right: 25%;
+        transform: translateX(-120%);
+    }
+    .container-wrap .right::after {
+        content: "开拓者\A 45-39";
+        white-space: pre;
+        position: absolute;
+        top: 4.7rem;
+        font-size: .7rem;
+        right: -6%;
+        transform: translateX(-120%);
+    }
+    .banner.row{
+        width: 50.4rem;
+    }
+   
+}
+
+.btm2 {
+    display: inline-block;
+   
+    height: 1.3rem;
+    line-height: 1.3rem;
+    text-align: center;
+}
+.line{
+    position: absolute;
+    top: 15rem;
+    width: 100%;
+    height: 1rem;
+    line-height: 1rem;
+    background: rgba(0, 47, 80, .7);
+}
+.line .btn2-wrap {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* 点击事件 */
+
+.chose {
+    width: 58.5rem;
+    height:1.7rem;
+    line-height: 1.7rem;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+   
+   
+}
+.chose p{
+    
+    width: 14.625rem;
+    cursor: pointer;
+    color: #999;
+    font-size:0.7rem;
+    text-align: center;
+}
+/* .chose p:hover{
+    color:#e11647;
+} */
+/* .chose p:hover span{
+    display: block;
+} */
+.chose p span{
+    display: block;
+    width: 100%;
+    height: 0.15rem;
+    background-color: #e11647;
+    display: none;
+}
+.backco .part{
+    width: 33.3%;
+    background-color: #fff;
+    border: 0.1rem solid #2464b5;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    display: flex;
+    height: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin :2rem auto 0.5rem;
+    font-size: 0.8rem;
+    color: #2464b5;
+}
+.backco .part li{
+    padding-top: 0.15rem;
+    height: 120%;
+    display: block;
+    width: 25%;
+    text-align: center;
+    border-right: 2px solid #2464b5;
+    
+}
+.backco .part li:last-child{
+    border: none;
+}
+.backco .part li:hover{
+    background: #2464b5;
+    color: white;
+}
+.backco .over{
+    position: relative;
+    width: 53.1rem;
+    height: 1.5rem;
+    background: white;
+    line-height:1.5rem;
+    text-align: center;
+    margin: 0.5rem auto 0.5rem;
+    font-size: 0.7rem;
+    box-shadow: 0 0.1rem 0.1rem #7f7f7f;
+}
+.backco .over::after{
+    content: "";
+    width: 0.1rem;
+    height: 2rem;
+    background-color: #999;
+    position: absolute;
+    bottom:-2rem;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0.2;
+}
+.backco .team{
+    font-size: 0.7rem;
+    display: flex;
+    
+    width: 53.1335rem;
+    margin: 0 auto;
+    align-items: center;
+    box-sizing: border-box;
+}
+.backco .team img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.sacle{
+    transform: scale(1.3);
+}
+.backco .team .left{
+    position: relative;
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    text-align: right;
+    width: 23.4rem;
+    background-color: white;
+}
+.backco .team .right{
+    position: relative;
+    margin-top: 1.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+
+    text-align: left;
+    width: 23.4rem;
+    background-color: white;
+}
+.backco .team .mi{
+    height: 3.5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+    font-weight:600;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.icon-line:after{
+    content: "";
+    width: 0.1rem;
+    height: 1rem;
+    background-color: #999;
+    position: absolute;
+    bottom:-1.4rem;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0.2;
+}
+.backco .kaituo .mi,.backco .kaituo .right{
+    margin-top: 0.5rem;
+}
+.backco .kaituo2 .mi,.backco .kaituo2 .right{
+    margin-top: -0.5rem;
+}
+.backco .bear2 .mi,.backco .bear2 .left{
+    margin-top: 0rem;
+}
+.footer{
+    height: 12.5rem;
+    width: 100%;
+    background-color: #012f50;;
+
+}
+.footer .wrap{
+   display: flex;
+    height: 12.5rem;
+    width: 60rem;
+    margin: 0 auto;
+    justify-content: space-around;
+    background: url(./img/footer-bg_90221b.png) no-repeat;
+}
+.footer dt{
+    font-weight: normal;
+    height: 65px;
+    line-height: 65px;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+}
+.footer dd a{
+    margin-bottom: 7px;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+}
+.footer dd img{
+    display: inline-block;
+    width: 5.5rem;
+    height: 5.5rem;
+}
+.bo{
+    height: 8.25rem;
+    width:100%;
+    background-color: #1f2428;;
+
+}
+.bo .cover{
+    padding-top: 1rem;
+    width: 60rem;
+    margin: 0 auto;
+    font-size:0.6rem;
+    color: white;
+    text-align: center;
+
+}
+/* 分页 */
+.swiper{
+    width: 60rem;
+    margin:0 auto;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 25.5rem;
+    height: 15.5rem;
+    float: left;
+    --swiper-pagination-color: #fff;
+    --swiper-navigation-size:1.5rem;
+}
+.swiper-container img{
+    width: 100%;
+}
+.btn::after{
+content: "";
+width: 1.25rem;
+height: 1.5rem;
+background: black;
+opacity: 0.5;
+padding: 0.25rem;
+box-sizing:content-box;
+}
+.swiper-container .btn{
+    display: none;
+    color:white;
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./swiper-5.4.5/package/css/swiper.min.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2006099_l47lv0bqg.css">
+    <!-- <link rel="stylesheet" href="./layui/css/layui.css"> -->
+    <title>比赛前瞻</title>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="top">
+                <a href="#" class="top">
+                    <img src="./img/nba-icon.png" alt="" width="100%">
+                </a>
+                <a href="#" class="logo-blue">
+                    <img src="./img/nba-com-icon.png" alt="">
+                </a>
+                <ul class="icons">
+                    <li>
+                        <a href="#" class="icons-a">
+                            <img src="./img/jrnba-icon-pc.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-a">
+                            <img src="./img/ball-fans-icon-pc (1).png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-a">
+                            <img src="./img/jrnba-icon-pc.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-a">
+                            <img src="./img/nbaapp-icon-pc.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="icons-a">
+                            <img src="./img/nbastore-icon-pc.png" alt="">
+                        </a>
+                    </li>
+                    <li style="position: relative;" id="store">
+                        <span class="iconfont icon-xialasanjiao " id="store-icon"></span>
+                        <ul class="store">
+                            <li><a href="#">球衣</a></li>
+                            <li><a href="#">上装</a></li>
+                            <li><a href="#">裤装</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="btm">
+                <ul class="btm-inner">
+                    <li>
+                        <a href="#"> 首页</a>
+
+                    </li>
+                    <li>
+                        <a href="#">视频</a>
+                    </li>
+                    <li>
+                        <a href="#"> 新闻</a>
+
+                    </li>
+                    <li>
+                        <a href="#">图集</a>
+                    </li>
+
+                    <li class="dow">
+                        <a href="#" style="position: relative;z-index: 2000;">球队</a>
+                        <i class="iconfont icon-down-trangle "></i>
+                    </li>
+                    <li class="dow" style="position: relative;">
+                        <a href="#" class="man"> 球员</a>
+                        <i class="iconfont icon-down-trangle "></i>
+                        <ul class="player boxes">
+                            <i class="toup">
+                                <img src="./img/上拉.svg" alt="" width="100%">
+                            </i>
+                            <li>现役球员</li>
+                            <li>退役球员</li>
+                        </ul>
+                    </li>
+                    <li class="dow">
+
+                        <a href="#">赛程 </a>
+                        <i class="iconfont icon-down-trangle "></i>
+                    </li>
+                    <li class="dow">
+                        <a href="#"> 排名</a>
+                        <i class="iconfont icon-down-trangle "></i>
+                    </li>
+                    <li class="dow">
+                        <a href="#"> 数据</a>
+                        <i class="iconfont icon-down-trangle "></i>
+                    </li>
+                    <li class="dow">
+                        <a href="#"> 专题</a>
+                        <i class="iconfont icon-down-trangle "></i>
+                    </li>
+                    <li>
+                        <a href="#"> 不止篮球</a>
+
+                    </li>
+                    <li class="dow">
+                        <a href="#"> 更多</a>
+                        <i class="iconfont icon-down-trangle "></i>
+                    </li>
+
+                </ul>
+                <div class="right">
+
+                    <div class="search">
+                        <a href="#" class="iconfont icon-sou_suo "></a>
+                        <!-- 点击后 -a 后插入input;动态展开 -->
+                        <div class="covers">
+                            <input type="text" id="sear">
+                        </div>
+                    </div>
+                    <div class="sign">
+                        <a href="#" class="iconfont icon-denglu"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="fixed" id="fixed">
+                <div class="btm" style=" background-color: #2464b5;">
+                    <ul class="bottom">
+                        <img src="./img/fixed-nav-logo.png" alt="" class="image-icon">
+                        <li>
+                            <a href="#"> 首页</a>
+
+                        </li>
+                        <li>
+                            <a href="#">视频</a>
+                        </li>
+                        <li>
+                            <a href="#"> 新闻</a>
+
+                        </li>
+                        <li>
+                            <a href="#">图集</a>
+                        </li>
+
+                        <li class="dow">
+                            <a href="#" style="position: relative;z-index: 2000;">球队</a>
+                            <i class="iconfont icon-down-trangle "></i>
+                        </li>
+                        <li class="dow" style="position: relative;">
+                            <a href="#" class="man"> 球员</a>
+                            <i class="iconfont icon-down-trangle "></i>
+                            <ul class="player boxes">
+                                <i class="toup">
+                                    <img src="./img/上拉.svg" alt="" width="100%">
+                                </i>
+                                <li>现役球员</li>
+                                <li>退役球员</li>
+                            </ul>
+                        </li>
+                        <li class="dow">
+
+                            <a href="#">赛程 </a>
+                            <i class="iconfont icon-down-trangle "></i>
+                        </li>
+                        <li class="dow">
+                            <a href="#"> 排名</a>
+                            <i class="iconfont icon-down-trangle "></i>
+                        </li>
+                        <li class="dow">
+                            <a href="#"> 数据</a>
+                            <i class="iconfont icon-down-trangle "></i>
+                        </li>
+                        <li class="dow">
+                            <a href="#"> 专题</a>
+                            <i class="iconfont icon-down-trangle "></i>
+                        </li>
+                        <li>
+                            <a href="#"> 不止篮球</a>
+
+                        </li>
+                        <li class="dow">
+                            <a href="#"> 更多</a>
+                            <i class="iconfont icon-down-trangle "></i>
+                        </li>
+                        <li>
+                            <a href="#" class="iconfont icon-denglu"></a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="fix-right">
+        <img src="./img/close_684894.png" alt="" class="close">
+        <img src="./img/code_0e94bb.png" alt="" class="code">
+        <div class="word">
+            下载NBA APP
+        </div>
+        <div class="new">
+            NBA官方资讯一手掌握
+        </div>
+    </div>
+    <div class="backco">
+        <div class="container-wrap ">
+            <div class="container pl-0 " style="margin-left:0.2rem;margin-left: -0.2rem;">
+                <div class="banner row">
+                    <div class="left col-md-4  col-sm-2  ">
+                        <div class="word">
+                            <span class="meng">
+                                孟菲斯<br>
+                                灰熊 (客)
+                            </span><br>
+                            <span class="west">
+                                西部 #9 (34-39)
+                            </span>
+
+                        </div>
+                        <div class="pic">
+                            <img src="./img/MEM_logo.svg" alt="" height="100%">
+                        </div>
+                        <div class="score" style="position: relative;">
+                            <div class="top">
+                                122
+                            </div>
+                            <span class="stop" style="font-size: 0.7rem;">暂停</span>
+                        </div>
+                    </div>
+                    <div class="middle col-md-4  col-sm-4  ">
+                        <table>
+                            <th style="color: #e11647;font-size: .9rem; ">
+                                结束
+                            </th>
+                            <tbody>
+                                <tr class="fir">
+                                    <td></td>
+                                    <td class="fir-td">1</td>
+                                    <td class="fir-td">2</td>
+                                    <td class="fir-td">3</td>
+                                    <td class="fir-td">4</td>
+                                </tr>
+                                <tr>
+                                    <td class="t">灰熊</td>
+                                    <td class="c">22</td>
+                                    <td class="c">11</td>
+                                    <td class="c">44</td>
+                                    <td class="c">23</td>
+                                </tr>
+                                <tr>
+                                    <td class="t">开拓者</td>
+                                    <td class="c">22</td>
+                                    <td class="c">11</td>
+                                    <td class="c">44</td>
+                                    <td class="c">23</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="right col-md-4  col-sm-2">
+
+
+                        <div class="score">
+                            <div class="top">
+                                126
+                            </div>
+                            <span class="stop" style="font-size: 0.7rem;">暂停</span>
+                        </div>
+                        <div class="pic">
+                            <img src="./img/POR_logo.svg" alt="" height="100%">
+                        </div>
+                        <div class="word" style="text-align: left; padding-left: 1rem;">
+                            <span class="meng">
+                                波特兰<br>
+                                开拓者(主)
+                            </span><br>
+                            <span class="west">
+                                西部 #8(34-39)
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chose">
+            <p>技术统计 
+                <span></span>
+            </p>
+            <p>文字直播<span></span></p>
+            <p>球队对比<span></span></p>
+            <p>集锦<span></span></p>
+        </div>
+        <div class="chose-b">
+
+        </div>
+        <ul class="part">
+          <li>第1节</li>
+          <li>第2节</li>
+          <li>第3节</li>
+          <li>第4节</li>
+        </ul>
+        <div class="over">
+            本节比赛结束
+        </div>
+        <div class="team bear">
+            <div class="left">
+                <span>瓦兰西尤纳斯 篮板球 (进攻篮板:4 防守篮板:13)</span>
+                <img src="./img/200826.png" alt="">
+            </div>
+            <div class="mi">
+                <span>第4节 00:00.0</span>
+                <span>灰熊</span>
+                <span class="icon-line" style="position: relative;">122 - 126</span>
+            </div>
+            <div ></div>
+        </div>
+        <div class="team kaituo">
+            <div class="left" style="opacity: 0;">
+               
+            </div>
+            <div class="mi">
+                <span>第4节 00:00.0</span>
+                <span>开拓者
+                   </span>
+                <span class="icon-line" style="position: relative;"> 122 - 126</span>
+            </div>
+            <div class="right" >
+                <img src="./img/201188.png" alt="">
+                <span>努尔基奇 两次罚球第二罚不中</span>
+            </div>
+        </div>
+        <div class="team kaituo2">
+            <div class="left" style="opacity: 0;">
+               
+            </div>
+            <div class="mi">
+                <span>第3节 00:00.0</span>
+                <span>开拓者
+                   </span>
+                <span class="icon-line" style="position: relative;"> 100 - 126</span>
+            </div>
+            <div class="right" >
+                <img src="./img/203967.png" alt="">
+                <span>安东尼 两次罚球第一罚中 （20分）</span>
+            </div>
+        </div>
+        <div class="team bear2">
+            <div class="left">
+                <span>瓦兰西尤纳斯 篮板球 (进攻篮板:4 防守篮板:13)</span>
+                <img src="./img/203501.png" alt="">
+            </div>
+            <div class="mi">
+                <span>第1节 00:00.0</span>
+                <span>灰熊</span>
+                <span style="position: relative;">122 - 126</span>
+            </div>
+            <div ></div>
+        </div>
+
+
+    </div>
+    
+    <div class="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/151122786.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/151161951.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/151161976.jpg" alt="">
+                </div>
+               
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev btn"></div>
+            <div class="swiper-button-next btn"></div>
+            
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrap">
+            <dl>
+                <dt>关于</dt>
+                <dd><a href="#">NBA Store</a></dd>
+                <dd><a href="#">NBA 就职机会</a></dd>
+            </dl>
+            <dl>
+                <dt>NBA赛事</dt>
+                <dd><a href="#">选秀大会</a></dd>
+                <dd><a href="#">NBA高中赛</a></dd>
+            </dl>
+            <dl>
+                <dt>专题</dt>
+                <dd><a href="#">休赛季转会</a></dd>
+                <dd><a href="#">联盟的骄傲</a></dd>
+                <dd><a href="#">新春贺岁</a></dd>
+                <dd><a href="#">抠像盛夏3</a></dd>
+            </dl>
+            <dl>
+                <dt>NBA101</dt>
+                <dd><a href="#">NBA历史</a></dd>
+                <dd><a href="#">NBA 知识Q&A</a></dd>
+            </dl>
+            <dl>
+                <dt>腾讯体育</dt>
+                <dd><img src="./img/media-store-qrcode_0ac518.png" alt=""></dd>
+            </dl>
+            <dl>
+                <dt>官方应用</dt>
+                <dd><img src="./img/media-pz-qrcode_9485b6.png" alt=""></dd>
+            </dl>
+        </div>
+      
+    </div>
+    <div class="bo">
+       <div class="cover">
+        <p>
+            ©2020年著作权 NBA 中国所有权。
+          </p>
+          <p>NBA.com/China上除去使用条款中所特别提及的部分之外，其它任何内容都不得以任何形式被复制、再传播，或篡改。</p>
+          <p>
+            
+  
+  进入NBA.com/China后，即表示阁下同意遵守NBA.com/China的隐私政策和使用条款。
+  
+  有任何的建议和意见，都欢迎联络我们：NBAChinaInfo@nba.com
+  
+  有关NBA商品授权合作事宜，敬请联系:GMGChinaBusinessInquiry@nba.com
+          </p>
+       </div>
+    </div>
+    <div class="line">
+        <div class="btn2-wrap">
+            <div class="btm2">The Field House | Orlando, FL</div>
+        </div>
+    </div>
+    
+    <script src="./js/jquery.js"></script>
+    <script src="./swiper-5.4.5/package/js/swiper.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./layui/layui.all.js"></script>
+</body>
+
+</html>
